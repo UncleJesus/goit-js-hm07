@@ -62,11 +62,45 @@
 // document.querySelector("#gallery").append(...createGallery);
 
 // !_____________________________________ ЗАДАНИЕ 4 _________________________________________
+// const Value = document.querySelector("#value");
 
+// const incrementButton = document.querySelector(`[data-action="increment"]`);
+// const decrementButton = document.querySelector(`[data-action="decrement"]`);
+
+// incrementButton.addEventListener("click", increment);
+// decrementButton.addEventListener("click", decrement);
+
+// function increment() {
+//   Value.textContent = Number(Value.textContent) + 1;
+// }
+// function decrement() {
+//   Value.textContent -= 1;
+// }
 // !_____________________________________ ЗАДАНИЕ 5 _________________________________________
+// const inputNameRef = document.querySelector("#name-input");
+// const spanNameRef = document.querySelector("#name-output");
 
+// inputNameRef.addEventListener("blur", (event) => {
+//     spanNameRef.textContent = event.target.value;
+// });
+//
 // !_____________________________________ ЗАДАНИЕ 6 _________________________________________
-
+// const inputValidRef = document.querySelector("#validation-input");
+// inputValidRef.addEventListener("blur", (event) => {
+//     // console.dir(event.target.attributes[2].value);
+//     // console.dir(event.target.dataset.length);
+//     // console.dir(inputValidRef.getAttribute("data-length"));
+//     if (event.target.value.length == inputValidRef.getAttribute("data-length")) {
+//         inputValidRef.classList.add("valid");
+//         inputValidRef.classList.remove("invalid");
+//     } else {
+//         inputValidRef.classList.add("invalid");
+//         inputValidRef.classList.remove("valid");
+//     }
+// });
 // !_____________________________________ ЗАДАНИЕ 7 _________________________________________
-
-// !_____________________________________ ЗАДАНИЕ 8 _________________________________________
+// const inputSizeRef = document.querySelector("#font-size-control");
+// const spanSizeRef = document.querySelector("#text-size");
+// inputSizeRef.addEventListener("mouseup", (event) => {
+//     spanSizeRef.style.fontSize = event.target.value + "px";
+// });
