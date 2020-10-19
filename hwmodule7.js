@@ -87,9 +87,6 @@
 // !_____________________________________ ЗАДАНИЕ 6 _________________________________________
 // const inputValidRef = document.querySelector("#validation-input");
 // inputValidRef.addEventListener("blur", (event) => {
-//     // console.dir(event.target.attributes[2].value);
-//     // console.dir(event.target.dataset.length);
-//     // console.dir(inputValidRef.getAttribute("data-length"));
 //     if (event.target.value.length == inputValidRef.getAttribute("data-length")) {
 //         inputValidRef.classList.add("valid");
 //         inputValidRef.classList.remove("invalid");
@@ -101,6 +98,6 @@
 // !_____________________________________ ЗАДАНИЕ 7 _________________________________________
 // const inputSizeRef = document.querySelector("#font-size-control");
 // const spanSizeRef = document.querySelector("#text-size");
-// inputSizeRef.addEventListener("mouseup", (event) => {
+// inputSizeRef.addEventListener("input", (event) => {
 //     spanSizeRef.style.fontSize = event.target.value + "px";
 // });
