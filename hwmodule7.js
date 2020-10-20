@@ -20,11 +20,10 @@
 //   "Приправы",
 // ];
 // let ul = document.querySelector("#ingredients");
-// const ingredientsList = ingredients.map((ingredient) => {
+// ingredients.forEach((ingredient) => {
 //   let li = document.createElement(`li`);
 //   li.textContent = ingredient;
 //   ul.append(li);
-//   return ul;
 // });
 
 // !_____________________________________ ЗАДАНИЕ 3 _________________________________________
@@ -54,17 +53,17 @@
 // });
 
 // !_____________________________________ ЗАДАНИЕ 4 _________________________________________
+// const decrement = function () {
+//   span.textContent -= 1;
+// };
+// const increment = function () {
+//   span.textContent = Number(span.textContent) + 1;
+// };
 // const dcBtn = document.querySelector(`[data-action="decrement"]`);
 // const incBtn = document.querySelector(`[data-action="increment"]`);
 // const span = document.querySelector("#value");
 // dcBtn.addEventListener("click", decrement);
 // incBtn.addEventListener("click", increment);
-// function decrement() {
-//   span.textContent -= 1;
-// }
-// function increment() {
-//   span.textContent = Number(span.textContent) + 1;
-// }
 
 // !_____________________________________ ЗАДАНИЕ 5 _________________________________________
 // const input = document.querySelector("#name-input");
