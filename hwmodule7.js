@@ -2,7 +2,6 @@
 
 // const listOfCategories = document.querySelectorAll(".item");
 // console.log(`В списке ${listOfCategories.length} категории.`);
-// listOfCategories.forEach((item) => console.log(item));
 // listOfCategories.forEach((item) =>
 //   console.log(
 //     `Категория: ${
@@ -20,14 +19,13 @@
 //   "Зелень",
 //   "Приправы",
 // ];
-
+// let ul = document.querySelector("#ingredients");
 // const ingredientsList = ingredients.map((ingredient) => {
 //   let li = document.createElement(`li`);
 //   li.textContent = ingredient;
-//   return li;
+//   ul.append(li);
+//   return ul;
 // });
-// let ul = document.querySelector("#ingredients");
-// ul.append(...ingredientsList);
 
 // !_____________________________________ ЗАДАНИЕ 3 _________________________________________
 // const images = [
@@ -47,54 +45,51 @@
 //     alt: "Group of Horses Running",
 //   },
 // ];
-
-// const imagesGallery = (image) => {
-//   const li = document.createElement(`li`);
-//   li.classList.add("gallery__item");
-//   const img = document.createElement(`img`);
-//   img.setAttribute(`src`, image.url);
-//   img.setAttribute(`alt`, image.alt);
-//   li.append(img);
-//   console.log(li);
-//   return li;
-// };
-// const createGallery = images.map((image) => imagesGallery(image));
-// document.querySelector("#gallery").append(...createGallery);
+// const gallery = document.querySelector("#gallery");
+// images.forEach((img) => {
+//   gallery.insertAdjacentHTML(
+//     "beforeend",
+//     `<li><img src=${img.url} alt=${img.alt}></li>`
+//   );
+// });
 
 // !_____________________________________ ЗАДАНИЕ 4 _________________________________________
-// const Value = document.querySelector("#value");
-
-// const incrementButton = document.querySelector(`[data-action="increment"]`);
-// const decrementButton = document.querySelector(`[data-action="decrement"]`);
-
-// incrementButton.addEventListener("click", increment);
-// decrementButton.addEventListener("click", decrement);
-
-// function increment() {
-//   Value.textContent = Number(Value.textContent) + 1;
-// }
+// const dcBtn = document.querySelector(`[data-action="decrement"]`);
+// const incBtn = document.querySelector(`[data-action="increment"]`);
+// const span = document.querySelector("#value");
+// dcBtn.addEventListener("click", decrement);
+// incBtn.addEventListener("click", increment);
 // function decrement() {
-//   Value.textContent -= 1;
+//   span.textContent -= 1;
 // }
-// !_____________________________________ ЗАДАНИЕ 5 _________________________________________
-// const inputNameRef = document.querySelector("#name-input");
-// const spanNameRef = document.querySelector("#name-output");
+// function increment() {
+//   span.textContent = Number(span.textContent) + 1;
+// }
 
-// inputNameRef.addEventListener("blur", (event) => {
-//     spanNameRef.textContent = event.target.value;
-// });
-//
+// !_____________________________________ ЗАДАНИЕ 5 _________________________________________
+// const input = document.querySelector("#name-input");
+// const span = document.querySelector("#name-output");
+// input.addEventListener(`input`, changeName);
+// function changeName(element) {
+//   if (element.target.value === "") {
+//     span.textContent = `незнакомец`;
+//   } else {
+//     span.textContent = element.target.value;
+//   }
+// }
 // !_____________________________________ ЗАДАНИЕ 6 _________________________________________
-// const inputValidRef = document.querySelector("#validation-input");
-// inputValidRef.addEventListener("blur", (event) => {
-//     if (event.target.value.length == inputValidRef.getAttribute("data-length")) {
-//         inputValidRef.classList.add("valid");
-//         inputValidRef.classList.remove("invalid");
-//     } else {
-//         inputValidRef.classList.add("invalid");
-//         inputValidRef.classList.remove("valid");
-//     }
-// });
+// const input = document.querySelector("#validation-input");
+
+// input.addEventListener(`blur`, checkInputLenght);
+// function checkInputLenght(event) {
+//   if (event.target.value.length >= input.getAttribute("data-length")) {
+//     input.classList.add("valid");
+//     input.classList.remove("invalid");
+//   } else {
+//     input.classList.add("invalid");
+//     input.classList.remove("valid");
+//   }
+// }
 // !_____________________________________ ЗАДАНИЕ 7 _________________________________________
 // const inputSizeRef = document.querySelector("#font-size-control");
 // const spanSizeRef = document.querySelector("#text-size");
